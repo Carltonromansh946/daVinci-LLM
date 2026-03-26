@@ -13,7 +13,7 @@
 daVinci-LLM is a fully-open pretraining research project by GAIR-NLP that aims to turn pretraining into a **scientific, question-driven process**. Instead of only releasing final checkpoints, we document data decisions, training dynamics, and negative results to enable reproducibility and systematic understanding.
 
 <div align="center">
-  <img src="fig/intro_davinci.png" alt="daVinci-LLM overview" width="100%" />
+  <img src="fig/image.png" alt="daVinci-LLM overview" width="100%" />
 </div>
 
 ## ✨ Paper Highlights
