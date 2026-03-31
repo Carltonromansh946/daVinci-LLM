@@ -9,23 +9,17 @@
 
 </div>
 
+**daVinci-LLM** is an open pretraining research project. We train models from scratch and release everything: data, training process, ablation results, and failed experiments, so you can build on our findings, not repeat our mistakes.
 
-$$
-\huge\textbf{Democratic Pretraining: Probably The Most Transparent and Reproducible Model}
-$$
+**Current release**: daVinci-3B matches OLMo3-7B, demonstrating that systematic, evidence-based methodology can unlock greater capability from smaller models.
 
-## 🔬 Why This Project Matters
+> 🚀 **Ongoing project**: We’re continuously exploring new frontiers and will release models, data, and insights as they mature.
 
-> [!IMPORTANT]
-> **Open-source ≠ Transparent.** While we can download weights, the scientific process remains hidden. **daVinci-LLM** fixes this by releasing the full recipe: 200+ ablations, data pipelines, and training logic.
 
 <div align="center">
   <img src="fig/score-daVinci-llm.png" alt="daVinci-LLM overview" width="100%" />
 </div>
 
-While open-weight models release only checkpoints, critical pretraining details—data compositions, mixture ratios, training dynamics—remain undisclosed. **daVinci-LLM**, developed by the **GAIR-NLP group at Shanghai Innovation Institute (SII)**, addresses this gap with a fully-open paradigm—releasing not only weights, but **200+ controlled ablation results**, complete data pipelines, training decision logic, and even failed attempts, so the community can understand *why* the model was trained this way, not merely *what* it produced.
-
-daVinci-LLM is not merely a pretrained model release, but an infrastructure for **Democratizing Pretraining Research**. Our goal is to transform pretraining from "black magic requiring industrial-scale resources" into "**scientific exploration that any team can participate in**".
 
 
 ## 🎁 What We Release
@@ -35,7 +29,7 @@ daVinci-LLM is not merely a pretrained model release, but an infrastructure for 
 | [🤖 **Model**](https://huggingface.co/SII-GAIR-NLP/davinci-llm-model) | daVinci-LLM-3B final checkpoint + all intermediate checkpoints |
 | [📊 **Training Data**](https://huggingface.co/datasets/SII-GAIR-NLP/davinci-llm-data) | 7.5T+ tokens of fully traceable, high-quality pretraining corpus |
 | [📄 **Technical Report**](https://arxiv.org/abs/2603.27164) | Complete exploration process: data decisions, training dynamics, systematic ablations, and failed experiments |
-| 🔧 **Pretraining Toolkit** (Coming soon) | Lightweight, integrated toolkit (data processing, evaluation, training utilities, etc.) for new starters to experiment with pretraining |
+| 🔧 **Pretraining Pipeline** (Coming soon) | Integrated pipeline for data processing, training, and evaluation |
 
 
 
