@@ -10,7 +10,7 @@
 
 
 $$
-\large\textbf{Democratic Pretraining: Probably The Most Transparent and Reproducible Model}
+\huge\textbf{Democratic Pretraining: Probably The Most Transparent and Reproducible Model}
 $$
 
 ## 🔬 Why This Project Matters
@@ -132,6 +132,8 @@ Our **daVinci-LLM-3B** (trained from random initialization over 8T tokens) achie
 
 
 ## 📚 Citation
+
+If you find this work helpful, please consider citing:
 
 ```bibtex
 @misc{qin2026davincillmtowardssciencepretraining,
