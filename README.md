@@ -76,7 +76,7 @@ Our **7.5T+ token training corpus is fully traceable**: every data source is exp
 ### 2. 🎓 Training Transparency — Adaptive Two-Stage Curriculum
 
 <div align="center">
-  <img src="fig/teaser-1.png" alt="Training & evaluation pipeline" width="95%" />
+  <img src="fig/train-traj.png" alt="Training & evaluation pipeline" width="95%" />
 </div>
 
 daVinci-LLM uses a **dynamically monitored, adaptively adjusted** two-stage curriculum. **Stage 1 (6T tokens)** evaluates all 19 benchmarks every 5,000 steps, revealing that general knowledge plateaus within 1T tokens while code and science reasoning keep growing past 4T—prompting reallocation of compute toward those domains. **Stage 2 (2T tokens)** introduces large-scale structured QA data: Stage 2-1 (1T) blends QA/code/science at 30% each to build a stable foundation, then Stage 2-2 (1T) raises QA to 70% for targeted reasoning amplification—yielding a **+12.14 overall gain** (39.58 → 51.72) and enabling the 3B model to match 7B-scale OLMo-3.
